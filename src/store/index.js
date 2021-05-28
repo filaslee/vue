@@ -54,7 +54,7 @@ export default new Vuex.Store({
   actions: {
     loadItems ({ commit }) {
           axios
-              .get('http://newsapi.org/v2/everything?q=bitcoin&from=2020-09-24&sortBy=publishedAt&apiKey=c59a7962ea304992870ab9fba8307206'
+              .get('https://newsapi.org/v2/everything?q=tesla&from=2021-04-28&sortBy=publishedAt&apiKey=c241c81680b744d190a1454984ccb5d7'
               )
               .then(response => response.data)
               .then(items => {
