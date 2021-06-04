@@ -1,6 +1,5 @@
 <template>
   <div >
-    
     <div id="app">
           <appheader></appheader>
           <router-view></router-view>
@@ -18,12 +17,11 @@ export default {
   components: {
     appheader:header,
     appfooter:footer
-    // AddNewsfeed,
-    // ListNewsfeed
   }
 }
 </script>
 
 <style>
 
-</style>
+</style>>
+

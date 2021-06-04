@@ -7,9 +7,9 @@
 
         <b-collapse class=" topnav justify-content-end" id="nav-text-collapse" is-nav>
         <b-navbar-nav>
-            <b-nav-text class="link"><router-link class="nav-link text-white" to="/add">Add</router-link></b-nav-text>
-            <b-nav-text class="link"><router-link class="text-white nav-link" to="/">Show NewsFeed</router-link></b-nav-text>
-            <b-nav-text class="link"><router-link class="text-white nav-link" to="/apinews">World NewsFeed</router-link></b-nav-text>
+            <b-nav-text class="link"><router-link class="text-white nav-link" to="/">Home</router-link></b-nav-text>
+            <b-nav-text class="link"><router-link class="nav-link text-white" to="/add">Add Post</router-link></b-nav-text>
+            <b-nav-text class="link"><router-link class="text-white nav-link" to="/apinews">From Api</router-link></b-nav-text>
         </b-navbar-nav>
         </b-collapse>
     </b-navbar>

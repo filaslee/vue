@@ -1,19 +1,19 @@
 <template>
-    <div>
+    <div class="list">
         <div class="jumbotron">
             <div class="container-fluid">
                 <div class="row justify-content-center">
                         <div class="col-2"></div>
                         <div class="col-8 my-2">
                             <div class="form-group">
-                                <input type="text" class="cssinput form-control form-control-lg" v-model="search" placeholder="search news title">
+                                <b-form-input id="uname" class="cssinput form-control form-control-lg" v-model="search" type="text" name="uname" placeholder="search news title" required></b-form-input>
                             </div>
                         </div>
                         <div class="col-2"></div>
                 </div>
                 <div class="row justify-content-center ">
                         <div class="col- mx-2">
-                            <div class="form-group">
+                            <div class="b-form-group">
                                 <select v-model="selectedTitle" class="form-control cssselect" >
                                     <option value="">Title order by</option>
                                     <option v-for="sort in SortType" :value="sort" :key="sort">{{sort}}</option>
@@ -21,7 +21,7 @@
                             </div>
                         </div>
                         <div class="col- mx-2">
-                            <div class="form-group">
+                            <div class="b-form-group">
                                 <select v-model="selectedContent" class="form-control">
                                     <option value="" class=" text-secondary">Content order by</option>
                                     <option v-for="sort in SortType" :value="sort" :key="sort">{{sort}}</option>
@@ -29,7 +29,7 @@
                             </div>
                         </div>
                         <div class="col- mx-2">
-                            <div class="form-group">
+                            <div class="b-form-group">
                                 <select v-model="selectedAuthor" class="form-control">
                                     <option value="">Author order by</option>
                                     <option v-for="sort in SortType" :value="sort" :key="sort">{{sort}}</option>
@@ -78,6 +78,14 @@
 <style scoped>
   .cssinput{
       border-radius: 30px;
+  }
+  .jumbotron
+  {
+    background-color: white;
+  }
+  .list
+  {
+     background-color: rgb(240, 240, 240);
   }
 
 </style>

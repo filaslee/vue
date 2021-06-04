@@ -6,13 +6,13 @@
             <p class="card-text text-justify" v-if="!editable">{{newsfeed.content}}</p>
             <h6 class="author my-3 float-right font-weight-lighter font-italic" v-if="!editable">Author~{{newsfeed.author}}</h6>
             <div v-else>
-                <input v-model="newsfeedtitle"  type="text" class="my-2 col form-control">
-                <textarea v-model="newsfeedcontent"  type="text" class="my-2 col form-control"/>
-                <input v-model="newsfeedauthor"  type="text" class=" my-2 col form-control">
+                <b-form-input v-model="newsfeedtitle"  type="text" class="my-2 col form-control"/>
+                <b-form-textarea v-model="newsfeedcontent"  type="text" class="my-2 col form-control"/>
+                <b-form-input v-model="newsfeedauthor"  type="text" class=" my-2 col form-control"/>
             </div>
             <div>
-                 <button @click="updateNewsfeed1(newsfeed)"  class="btn btn-outline-secondary btn-sm mx-1">{{editable?'Update':'Edit'}}</button>
-                 <button @click="deleteNewsfeed(newsfeed.id)" v-html="Del" class="btn btn-outline-secondary btn-sm mx-1"></button>
+                 <b-button @click="updateNewsfeed1(newsfeed)"  class="btn btn-outline-secondary btn-sm mx-1">{{editable?'Update':'Edit'}}</b-button>
+                 <b-button @click="deleteNewsfeed(newsfeed.id)" v-html="Del" class="btn btn-outline-secondary btn-sm mx-1"></b-button>
             </div>
          </div>
      </div>
@@ -58,5 +58,5 @@ import { mapActions } from 'vuex'
 </script>
 
 <style scoped>
-
+ 
 </style>

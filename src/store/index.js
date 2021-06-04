@@ -16,46 +16,45 @@ export default new Vuex.Store({
         id:1,
         title:"Germany",
         content:"Germany is a Western European country with a landscape of forests, rivers, mountain ranges and North Sea beaches. It has over 2 millennia of history. Berlin, its capital, is home to art and nightlife scenes, the Brandenburg Gate and many sites relating to WWII. Munich is known for its Oktoberfest and beer halls, including the 16th-century Hofbräuhaus. Frankfurt, with its skyscrapers, houses the European Central Bank. ",
-        author:"Filmon"
+        author:"Wikipedia"
 
       },
       {
         id:2,
         title:"Holland",
         content:"The Netherlands, a country in northwestern Europe, is known for a flat landscape of canals, tulip fields, windmills and cycling routes. Amsterdam, the capital, is home to the Rijksmuseum, Van Gogh Museum and the house where Jewish diarist Anne Frank hid during WWII. Canalside mansions and a trove of works from artists including Rembrandt and Vermeer remain from the city's 17th-century ",
-        author:"Samuel"
+        author:"Wikipedia2"
       },
       {
         id:3,
         title:"England",
         content:"England is a country that is part of the United Kingdom. It shares land borders with Wales to its west and Scotland to its north. The Irish Sea lies northwest of England and the Celtic Sea to the southwest. England is separated from continental Europe by the North Sea to the east and the English Channel to the south.",
-        author:"Michael"
+        author:"Wikipedia"
       },
       {
         id:4,
         title:"Holland",
         content:"The Netherlands, a country in northwestern Europe, is known for a flat landscape of canals, tulip fields, windmills and cycling routes. Amsterdam, the capital, is home to the Rijksmuseum, Van Gogh Museum and the house where Jewish diarist Anne Frank hid during WWII. Canalside mansions and a trove of works from artists including Rembrandt and Vermeer remain from the city's 17th-century ",
-        author:"Noah"
+        author:"Wikipedia1"
       },
       {
         id:5,
         title:"USA",
         content:"The U.S. is a country of 50 states covering a vast swath of North America, with Alaska in the northwest and Hawaii extending the nation’s presence into the Pacific Ocean. Major Atlantic Coast cities are New York, a global finance and culture center, and capital Washington, DC. Midwestern metropolis Chicago is known for influential architecture and on the west coast, Los Angeles' Hollywood is famed for filmmaking. ",
-        author:"Yohannes"
+        author:"Wikipedia"
       },
       {
         id:6,
         title:"Canada",
         content:"Canada is a country in the northern part of North America. Its ten provinces and three territories extend from the Atlantic to the Pacific and northward into the Arctic Ocean, covering 9.98 million square kilometres, making it the world's second-largest country by total area.  In Canada, parents have to make sure their children get an education. Provincial and territorial governments set up and run their own school systems. They’re much the same across Canada, but there are some differences among provinces and territories. Canada does not have a federal department or national system of education.",
-        author:"Yohannes"
+        author:"Wikipedia"
       }
     ]
   },
   actions: {
     loadItems ({ commit }) {
           axios
-              .get('https://newsapi.org/v2/everything?q=tesla&from=2021-04-28&sortBy=publishedAt&apiKey=c241c81680b744d190a1454984ccb5d7'
-              )
+              .get('https://newsdata.io/api/1/news?apikey=YOUR_API_KEY&q=dogecoin')
               .then(response => response.data)
               .then(items => {
                   console.log(items.articles);
