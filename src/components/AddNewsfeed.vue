@@ -1,5 +1,5 @@
 <template>
-    <div class="row mt-4 justify-content-center"> 
+    <div class="row mx-4 mt-4 justify-content-center"> 
         <form class="col bg-white shadow-lg">
             <h3 class="p-3 my-3 text-center text-secondary">Add Newsfeed</h3>
             <input v-model="titletext" type="text" class="form-control my-3" id="uname" placeholder="Enter Title" name="uname" required>

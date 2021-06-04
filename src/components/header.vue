@@ -1,26 +1,35 @@
 <template>
-    <div class="navbar justify-content-center navbar-expand-lg bg-dark">
-        <ul class="navbar-nav">
-            <li class="nav-item">
-                <router-link class="nav-link text-white btn btn-outline-success mx-2" to="/add">Add</router-link>
-            </li>
-            <li class="nav-item">
-                <router-link class="text-white nav-link btn btn-outline-success mx-2" to="/">Show NewsFeed</router-link>
-            </li>
-              <li class="nav-item">
-                <router-link class="text-white nav-link btn btn-outline-success" to="/apinews">World NewsFeed</router-link>
-            </li>
-        </ul>
+    <div>
+    <b-navbar toggleable="sm" type="light" variant="light" class="navbar">
+        <b-navbar-toggle target="nav-text-collapse"></b-navbar-toggle>
+
+        <b-navbar-brand  to="/"><img src="../assets/images/logo.svg" class="logo" alt=""></b-navbar-brand>
+
+        <b-collapse class=" topnav justify-content-end" id="nav-text-collapse" is-nav>
+        <b-navbar-nav>
+            <b-nav-text class="link"><router-link class="nav-link text-white" to="/add">Add</router-link></b-nav-text>
+            <b-nav-text class="link"><router-link class="text-white nav-link" to="/">Show NewsFeed</router-link></b-nav-text>
+            <b-nav-text class="link"><router-link class="text-white nav-link" to="/apinews">World NewsFeed</router-link></b-nav-text>
+        </b-navbar-nav>
+        </b-collapse>
+    </b-navbar>
     </div>
 </template>
 
 <script>
     export default {
-        
     }
-    
 </script>
 
 <style scoped>
-
+    .navbar
+    {
+        background-image: linear-gradient(-90deg, #348ac7, #7474bf  );
+        font-family: 'Nunito', sans-serif;
+    }
+   .logo
+    {
+        width: 100px;
+        height: 50px;
+    }
 </style>
