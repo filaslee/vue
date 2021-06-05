@@ -1,8 +1,8 @@
 <template>
     <div class="list">
         <div class="jumbotron">
-            <div class="container-fluid pt-5">
-                <div class="row justify-content-center mt-5">
+            <div class="container-fluid">
+                <div class="row justify-content-center">
                         <div class="col-2"></div>
                         <div class="col-8 my-2">
                             <div class="form-group">
@@ -86,6 +86,7 @@
   .list
   {
      background-color: rgb(240, 240, 240);
+     padding-top: 70px; 
   }
 
 </style>

@@ -1,5 +1,5 @@
 <template>
-    <div class="pt-5 mt-5">
+    <div class="pad">
         <div class="row mx-4 justify-content-center"> 
             <b-form class="col">
                 <h3 class="p-3 my-3 text-center text-white">Add Newsfeed</h3>
@@ -56,5 +56,9 @@
         .title
         {
             color:white;
+        }
+        .pad
+        {
+            padding-top: 150px; 
         }
 </style>

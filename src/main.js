@@ -18,7 +18,6 @@ Vue.use(BootstrapVue)
 Vue.use(VueLodash, { lodash: lodash })
 Vue.use(vueRouter)
 
-//  BootstrapVue icon components plugin
 Vue.use(IconsPlugin)
 const router=new vueRouter({
   routes:index,

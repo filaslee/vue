@@ -11,7 +11,7 @@
                 <b-form-input v-model="newsfeedauthor"  type="text" class=" my-2 col form-control"/>
             </div>
             <div>
-                 <b-button @click="updateNewsfeed1(newsfeed)"  class="btn  btn-sm mx-1">{{editable?'Update':'Edit'}}</b-button>
+                 <b-button @click="updateNewsfeed1(newsfeed)"  class=" btn btn-sm mx-1">{{editable?'Update':'Edit'}}</b-button>
                  <b-button @click="deleteNewsfeed(newsfeed.id)" v-html="Del" class="btn btn-sm mx-1"></b-button>
             </div>
          </div>
@@ -58,5 +58,5 @@ import { mapActions } from 'vuex'
 </script>
 
 <style scoped>
- 
+
 </style>
