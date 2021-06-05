@@ -1,6 +1,6 @@
 <template>
     <div>
-    <b-navbar toggleable="sm" type="light" variant="light" class="navbar">
+    <b-navbar toggleable="sm" type="light" variant="light" class="navbar fixed-top">
         <b-navbar-toggle target="nav-text-collapse"></b-navbar-toggle>
 
         <b-navbar-brand  to="/"><img src="../assets/images/logo.svg" class="logo" alt=""></b-navbar-brand>

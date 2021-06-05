@@ -1,8 +1,8 @@
 <template>
     <div class="list">
         <div class="jumbotron">
-            <div class="container-fluid">
-                <div class="row justify-content-center">
+            <div class="container-fluid pt-5">
+                <div class="row justify-content-center mt-5">
                         <div class="col-2"></div>
                         <div class="col-8 my-2">
                             <div class="form-group">
@@ -12,7 +12,7 @@
                         <div class="col-2"></div>
                 </div>
                 <div class="row justify-content-center ">
-                        <div class="col- mx-2">
+                        <div class="col- mx-2 mt-4">
                             <div class="b-form-group">
                                 <select v-model="selectedTitle" class="form-control cssselect" >
                                     <option value="">Title order by</option>
@@ -20,7 +20,7 @@
                                 </select>
                             </div>
                         </div>
-                        <div class="col- mx-2">
+                        <div class="col- mx-2 mt-4">
                             <div class="b-form-group">
                                 <select v-model="selectedContent" class="form-control">
                                     <option value="" class=" text-secondary">Content order by</option>
@@ -28,7 +28,7 @@
                                 </select>
                             </div>
                         </div>
-                        <div class="col- mx-2">
+                        <div class="col- mx-2 mt-4">
                             <div class="b-form-group">
                                 <select v-model="selectedAuthor" class="form-control">
                                     <option value="">Author order by</option>

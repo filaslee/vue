@@ -1,6 +1,6 @@
 <template>
-    <div >
-        <div class="row mx-4 mt-4 justify-content-center"> 
+    <div class="pt-5 mt-5">
+        <div class="row mx-4 justify-content-center"> 
             <b-form class="col">
                 <h3 class="p-3 my-3 text-center text-white">Add Newsfeed</h3>
                 <b-form-input id="uname" v-model="titletext" type="text" name="uname" placeholder="Enter Title" required></b-form-input>

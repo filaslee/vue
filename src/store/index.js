@@ -54,7 +54,7 @@ export default new Vuex.Store({
   actions: {
     loadItems ({ commit }) {
           axios
-              .get('https://newsdata.io/api/1/news?apikey=YOUR_API_KEY&q=dogecoin')
+              .get('https://jobs.github.com/positions.json?description=api')
               .then(response => response.data)
               .then(items => {
                   console.log(items.articles);
